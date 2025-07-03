@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api_Random_User</title>
+    <link rel="stylesheet" href="Api.css">
+</head>
+
+<body>
+    <div id="error_message" style="display: none; color: white; background: #e74c3c; padding: 20px; border-radius: 10px; max-width: 600px; margin: 20px auto; text-align: center; font-weight: bold;">
+        ⚠️ Failed to fetch user data. Please try again later.
+      </div>
+      
+    <div id="user_info">
+        <div id="user_img">
+            <img src="" alt="profile" id="profile-pic">
+        </div>
+        <div>
+            <h1><span class="key">Name:</span> <span class="value" id="user-name"></span></h1>
+            <h1><span class="key">DOB:</span> <span class="value" id="dob"></span></h1>
+            <h1><span class="key">Gender:</span> <span class="value" id="gender"></span></h1>
+            <h1><span class="key">Age:</span> <span class="value" id="age"></span></h1>
+            <h1><span class="key">Email:</span> <span class="value" id="email"></span></h1>
+            <h1><span class="key">Phone:</span> <span class="value" id="phone"></span></h1>
+        </div>
+        <div>
+            <h1><span class="key">Street:</span> <span class="value" id="street"></span></h1>
+            <h1><span class="key">Location:</span> <span class="value" id="location"></span></h1>
+            <h1><span class="key">Coordinates:</span> <span class="value" id="coordinates"></span></h1>
+            <h1><span class="key">Timezone:</span> <span class="value" id="timezone"></span></h1>
+        </div>
+        <button id="btn1" onclick="new_profile()">Click here to see the next profile</button>
+    </div>
+
+    <script src="Api.js"></script>
+</body>
+
+</html>
